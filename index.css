@@ -1,0 +1,117 @@
+#robot{
+    height:800px;
+    position:relative;
+    display:block;
+    margin:auto;
+    top:-10px;
+}
+#money{
+    position:absolute;
+    top:50px;
+    left:70%;
+    display:flex;
+    align-items:center;
+}
+#coin{
+    height:35px;
+}
+#money_left{
+    margin-left:10px;
+    font-size:20px;
+}
+#cost{
+    font-size:20px;
+    position:absolute;
+    left:75%;
+    top:550px;
+}
+
+#publish{
+    padding:15px;
+    font-size:20px;
+    border-radius:10px;
+    border-width:1px;
+    position:absolute;
+    left:80%;
+    top:590px;
+    cursor:pointer;
+}
+#restart1{
+    padding:15px;
+    font-size:20px;
+    border-radius:10px;
+    border-width:1px;
+    position:absolute;
+    left:70%;
+    top:590px;
+    cursor:pointer;
+}
+
+#input_bar{
+    position:absolute;
+    top:260px;
+    left:70%;
+    font-size:17px;
+}
+#curiosity{
+    margin-left:29px;
+}
+#empathy{
+    margin-left:31px;
+}
+#independence{
+    margin-left:0px;
+}
+#knowledge{
+    margin-left:15px;
+}
+input{
+    vertical-align: middle;
+    height:60px;
+}
+output{
+    vertical-align: middle;
+}
+label{
+    vertical-align: middle;
+}
+
+#result{
+    position:relative;
+    height:250px;
+    width:400px;
+    margin:auto;
+    top:-600px;
+    background-color: lightgray;
+    visibility:hidden;
+}
+
+#result_text{
+    width:fit-content;
+    position:relative;
+    top:60px;
+    margin:auto;
+    font-size:40px;
+    white-space:pre;
+}
+
+#modify{
+    padding:10px;
+    font-size:17px;
+    border-radius:5px;
+    border-width:1px;
+    position:absolute;
+    bottom:30px;
+    left:100px;
+    cursor:pointer;
+}
+#restart{
+    padding:10px;
+    font-size:17px;
+    border-radius:5px;
+    border-width:1px;
+    position:absolute;
+    bottom:30px;
+    right:100px;
+    cursor:pointer;
+}

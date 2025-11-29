@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frankenstein Simulator</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <img src="robot.png" id="robot">
+    <div id="money">
+        <img src="coin.png" id="coin">
+        <div id="money_left">400</div>
+    </div>
+    <div id="input_bar">
+        <div class="input">
+            <label for="curiosity">Curiosity: </label>
+            <input type="range" id="curiosity" name="curiosity" min="0" max="100" value="0" list="values">
+            <output id="curiosity_value"></output>
+        </div>
+        <div class="input">
+            <label for="empathy">Empathy: </label>
+            <input type="range" id="empathy" name="empathy" min="0" max="100" value="0" list="values">
+            <output id="empathy_value"></output>
+        </div>
+        <div class="input">
+            <label for="knowledge">Knowledge: </label>
+            <input type="range" id="knowledge" name="knowledge" min="0" max="100" value="0" list="values">
+            <output id="knowledge_value"></output>
+        </div>
+        <div class="input">
+            <label for="independence">Independence: </label>
+            <input type="range" id="independence" name="independence" min="0" max="100" value="0" list="values">
+            <output id="independence_value"></output>
+        </div>
+    </div>
+    <div id="cost">Cost: 0</div>
+    <button id="publish">Publish!</button>
+    <button id="restart1">Restart</button>
+    <div id="result">
+        <div id="result_text"></div>
+        <button id="modify">Modify</button>
+        <button id="restart">Restart</button>
+    </div>
+
+    <datalist id="values">
+        <option value="0" label="0"></option>
+        <option value="25" label="25"></option>
+        <option value="50" label="50"></option>
+        <option value="75" label="75"></option>
+        <option value="100" label="100"></option>
+    </datalist>
+    <script src="index.js"></script>
+</body>
+</html>
