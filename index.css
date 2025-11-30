@@ -45,6 +45,7 @@
     left:70%;
     top:590px;
     cursor:pointer;
+    visibility:hidden;
 }
 
 #input_bar{
@@ -81,7 +82,7 @@ label{
     height:250px;
     width:400px;
     margin:auto;
-    top:-600px;
+    top:-850px;
     background-color: lightgray;
     visibility:hidden;
 }
@@ -113,5 +114,44 @@ label{
     position:absolute;
     bottom:30px;
     right:100px;
+    cursor:pointer;
+}
+#succeed{
+    width:fit-content;
+    position:relative;
+    top:60px;
+    margin:auto;
+    font-size:15px;
+    white-space:pre;
+    visibility:hidden;
+}
+
+#instruction{
+    position:relative;
+    height:250px;
+    width:400px;
+    margin:auto;
+    top:-600px;
+    background-color: lightgray;
+}
+
+#instruction_text{
+    width:fit-content;
+    position:relative;
+    top:30px;
+    margin:auto;
+    font-size:20px;
+    white-space:pre;
+    line-height:25px;
+}
+
+#got{
+    padding:10px;
+    font-size:17px;
+    border-radius:5px;
+    border-width:1px;
+    position:absolute;
+    bottom:15px;
+    left:170px;
     cursor:pointer;
 }

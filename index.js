@@ -14,6 +14,9 @@ let modify = document.getElementById("modify");
 let restart = document.getElementById("restart");
 let result_text = document.getElementById("result_text");
 let restart1 = document.getElementById("restart1");
+let instruction = document.getElementById("instruction");
+let got = document.getElementById("got");
+let succeed = document.getElementById("succeed");
 let ini_curiosity = 0;
 let ini_empathy = 0;
 let ini_independence = 0;
@@ -25,8 +28,6 @@ let independence_cost = 1.5;
 let money = 400;
 let total_cost = 0;
 let restart_time = -1;
-
-replay();
 
 curiosity.addEventListener("input", (event) => {
   curiosity_output.textContent = event.target.value;
@@ -41,11 +42,7 @@ knowledge.addEventListener("input", (event) => {
   knowledge_output.textContent = event.target.value;
 });
 
-publish.addEventListener("click", publish_robot, false);
-curiosity.addEventListener("change", cost_change, false);
-empathy.addEventListener("change", cost_change, false);
-knowledge.addEventListener("change", cost_change, false);
-independence.addEventListener("change", cost_change, false);
+got.addEventListener("click", replay, false);
 modify.addEventListener("click", modify_robot, false);
 restart.addEventListener("click", replay, false);
 restart1.addEventListener("click", replay, false);
@@ -87,7 +84,8 @@ function show_result() {
       parseInt(curiosity.value) + parseInt(knowledge.value) <= 130 &&
       parseInt(empathy.value) + parseInt(independence.value) >= 110 &&
       parseInt(empathy.value) + parseInt(independence.value) <= 120) {
-    result_text.textContent = "Succeed!\r\nYou restarted " + restart_time + " times."
+    result_text.textContent = "Succeed!\nYou restarted " + restart_time + " times."
+    succeed.style.setProperty("visibility","visible");
   } else {
     result_text.textContent = "Failed";
   }
@@ -105,6 +103,7 @@ function modify_robot() {
 }
 
 function replay() {
+  instruction.style.setProperty("visibility","hidden");
   result.style.setProperty("visibility","hidden");
   restart1.style.setProperty("visibility","hidden");
   publish.addEventListener("click", publish_robot, false);
@@ -112,6 +111,7 @@ function replay() {
   empathy.addEventListener("change", cost_change, false);
   knowledge.addEventListener("change", cost_change, false);
   independence.addEventListener("change", cost_change, false);
+  publish.addEventListener("click", publish_robot, false);
   restart_time += 1;
   ini_curiosity = 0;
   ini_empathy = 0;
