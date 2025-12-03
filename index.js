@@ -94,6 +94,7 @@ function show_result() {
 function modify_robot() {
   result.style.setProperty("visibility","hidden");
   restart1.style.setProperty("visibility","visible");
+  succeed.style.setProperty("visibility","hidden");
   publish.addEventListener("click", publish_robot, false);
   curiosity.addEventListener("change", cost_change, false);
   empathy.addEventListener("change", cost_change, false);
@@ -106,6 +107,7 @@ function replay() {
   instruction.style.setProperty("visibility","hidden");
   result.style.setProperty("visibility","hidden");
   restart1.style.setProperty("visibility","hidden");
+  succeed.style.setProperty("visibility","hidden");
   publish.addEventListener("click", publish_robot, false);
   curiosity.addEventListener("change", cost_change, false);
   empathy.addEventListener("change", cost_change, false);
